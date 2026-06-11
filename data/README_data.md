@@ -38,6 +38,16 @@ analysis data. Band ordering is R/G/B; CRS is EPSG:4326.
 | `C_NE_2009_inset_boxC_latlon.tif` | Inset C zoom |
 
 ---
+## lst_pierce_four_scenes.csv
+Feeds Figure 2. Pixel-level land surface temperature for grassland and maize in Pierce
+County, Nebraska for four Landsat scenes spanning the study period. Provenance: public.
+
+| Column | Description |
+|---|---|
+| `date` | Scene date (YYYY-MM-DD) |
+| `satellite` | Landsat satellite (e.g. Landsat 5, Landsat 8) |
+| `land_cover` | Land cover type: `corn` or `grass` |
+| `lst_c` | Land surface temperature (°C) |
 
 ## reference_consistency_deciles.csv
 Feeds Figure S2. Provenance: public.
