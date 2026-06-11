@@ -178,7 +178,7 @@ See `data/README.md` for the column-level dictionary of every input CSV.
 
 - **Posterior maps (Nebraska, 2003–2023, 30 m):** archived on HydroShare,
   DOI `http://www.hydroshare.org/resource/214a74d3d1694cc29c07f2d3da14a2b2`.
-- **Code:** this repository, archived at Zenodo, DOI `10.5281/zenodo.20648900`.
+- **Code:** this repository, archived at Zenodo, [DOI `10.5281/zenodo.20648900](https://doi.org/10.5281/zenodo.20648900)`.
 - **Aggregated figure/statistic data and prior table:** in `data/` (see `data/README.md`).
 - **Landsat LST, USDA CDL, and USDA/NASS statistics:** publicly available through their
   respective providers.
