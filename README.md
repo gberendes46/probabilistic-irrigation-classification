@@ -21,7 +21,6 @@ Greta F. Berendes, Patricio Grassini, Peter Huybers
   irrigation prior table, and the three GeoTIFF panels used in Figure 3. Column-level
   documentation is in `data/README_data.md`.
 - `LICENSE` — MIT license.
-- `CITATION.cff` — citation metadata.
 
 The maps are produced in `gee/`; the figures and statistics are produced in `python/` from
 `data/`. 
@@ -158,6 +157,7 @@ in `data/`. Each is self-contained and reads from `data/` relative to the repo r
 
 | Script | Produces |
 |---|---|
+| `fig2_lst_pdf_cdf.py` | Figure 2, LST pixel distributions for four Pierce County scenes |
 | `fig3_posterior_map.py` | Figure 3, the 2009 posterior map (reads GeoTIFFs in `data/`) |
 | `fig4_water_applied_by_year.py` | Figure 4, applied water and precipitation by year |
 | `fig5_accuracy_vs_water_applied.py` | Figure 5, accuracy and posterior spread by applied-water bin |
@@ -168,8 +168,7 @@ in `data/`. Each is self-contained and reads from `data/` relative to the repo r
 | `stats_maptomap.py` | §4.5 map-to-map agreement numbers |
 | `stats_lst_wet_dry.py` | §4.3 wet/dry LST contrast |
 
-Most scripts require only `numpy`, `pandas`, and `matplotlib`. `fig3_posterior_map.py`
-additionally requires `rasterio` and `cartopy` (`pip install rasterio cartopy`).
+Most scripts require only `numpy`, `pandas`, and `matplotlib`. `fig2_lst_pdf_cdf.py` additionally requires `scipy` (`pip install scipy`). `fig3_posterior_map.py` additionally requires `rasterio` and `cartopy` (`pip install rasterio cartopy`).
 
 See `data/README.md` for the column-level dictionary of every input CSV.
 
@@ -178,7 +177,7 @@ See `data/README.md` for the column-level dictionary of every input CSV.
 ## Data and code availability
 
 - **Posterior maps (Nebraska, 2003–2023, 30 m):** archived on HydroShare,
-  DOI `[HYDROSHARE DOI]`.
+  DOI `http://www.hydroshare.org/resource/214a74d3d1694cc29c07f2d3da14a2b2`.
 - **Code:** this repository, archived at Zenodo, DOI `[ZENODO DOI]`.
 - **Aggregated figure/statistic data and prior table:** in `data/` (see `data/README.md`).
 - **Landsat LST, USDA CDL, and USDA/NASS statistics:** publicly available through their
@@ -198,7 +197,7 @@ Released under the MIT License. See `LICENSE`.
 ## Citation
 
 If you use this code or the posterior maps, please cite the paper and the archived code
-release. Machine-readable metadata is in `CITATION.cff`; the Zenodo DOI above is the
+release. The Zenodo DOI above is the
 preferred citation for the software.
 
 ---
