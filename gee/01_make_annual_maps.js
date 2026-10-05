@@ -281,7 +281,7 @@ function getRegionYearIrrFraction(stateUpper, regionNameUpper, yearInt) {
     0
   ));
 
-  return perc.divide(100);
+  return ee.Number(1).subtract(perc.divide(100));
 }
 
 
